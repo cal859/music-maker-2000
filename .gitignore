@@ -1,0 +1,9 @@
+# General
+.txt
+
+# Editor
+.vscode
+
+# Python
+.venv
+__pycache__/

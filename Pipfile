@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+torch = "*"
+matplotlib = "*"
+numpy = "*"
+streamlit = "*"
+beautifulsoup4 = "*"
+nltk = "*"
+lxml = "*"
+
+[dev-packages]
+jupyter = "*"
+black = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+app = "streamlit run ./src/streamlit_app.py"
+
+[pipenv]
+allow_prereleases = true
