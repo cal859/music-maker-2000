@@ -6,7 +6,7 @@ This repo uses recurrent neural networks to generate new songs or song snippets 
 
 The application is deployed as a [stremlit app](https://www.streamlit.io/), and allows you to pick from a few pre-trained models, or train your own model from scratch, allowing you to select a number of hyper parameters and text cleaning options. 
 
-There were a number of great online resources I used when creating this work, and would have been hard to do without:
+There were a number of great online resources I used when creating this work, and would have been hard to do without. Some of the main ones are listed below:
 
  - [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) By Andrej Karpathy
 
