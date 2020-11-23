@@ -7,6 +7,8 @@ import numpy as np
 import torch
 import torch.nn as nn
 
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 
 def check_model_cache(model_save_folder):
     if not os.path.isdir(f"{model_save_folder}"):
@@ -22,7 +24,7 @@ def check_model_cache(model_save_folder):
 
 
 def load_model(model_folder):
-    mdl = torch.load(f"{model_folder}/model.pkl")
+    mdl = torch.load(f"{model_folder}/model.pkl", map_location=DEVICE)
     with open(f"{model_folder}/int_to_vocab.pkl", "rb") as itv:
         int_to_vocab = pkl.load(itv)
     with open(f"{model_folder}/vocab_to_int.pkl", "rb") as vti:
